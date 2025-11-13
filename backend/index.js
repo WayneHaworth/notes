@@ -1,8 +1,8 @@
 import express from 'express'
 const app = express()
-const core = require('cors')
+import cors from 'cors'
 
-app.use(core())
+app.use(cors())
 app.use(express.json())
 
 let notes = [
